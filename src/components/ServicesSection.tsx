@@ -161,7 +161,7 @@ const ServicesSection = () => {
                   {service.features.map((feature, featureIndex) => (
                     <div
                       key={featureIndex}
-                      className="flex items-center text-sm text-gray-700"
+                      className="flex items-center text-sm text-gray-700 bg-[#ffffff]"
                     >
                       <div
                         className={`w-2 h-2 rounded-full mr-3 ${getIconColor(service.color).replace("text-", "bg-")}`}
