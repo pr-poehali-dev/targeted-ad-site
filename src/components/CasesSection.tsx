@@ -50,8 +50,16 @@ const CasesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-900 text-white">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-red-500/10 to-pink-500/10" />
+      <div className="absolute top-10 right-10 w-40 h-40 bg-gradient-to-r from-orange-400 to-red-400 rounded-full opacity-10 animate-pulse" />
+      <div
+        className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full opacity-10 animate-pulse"
+        style={{ animationDelay: "1s" }}
+      />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <Badge
             variant="outline"
@@ -61,13 +69,12 @@ const CasesSection = () => {
           </Badge>
           <h2 className="font-montserrat text-3xl md:text-5xl font-bold mb-6">
             Реальные{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
               результаты работы
             </span>
           </h2>
           <p className="font-open-sans text-xl text-gray-300 max-w-2xl mx-auto">
-            Изучите конкретные проекты и достигнутые результаты для бизнеса
-            клиентов
+            📈 Конкретные цифры роста продаж и прибыли моих клиентов
           </p>
         </div>
 
@@ -75,7 +82,7 @@ const CasesSection = () => {
           {cases.map((caseItem, index) => (
             <Card
               key={index}
-              className="bg-gray-800 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 overflow-hidden"
+              className="bg-gradient-to-br from-gray-800 to-gray-700 border-2 border-gray-600 hover:border-orange-500 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20 overflow-hidden hover:scale-105"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -84,8 +91,8 @@ const CasesSection = () => {
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-blue-600 text-white">
-                    {caseItem.industry}
+                  <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold border-0">
+                    🏆 {caseItem.industry}
                   </Badge>
                 </div>
               </div>
@@ -109,7 +116,7 @@ const CasesSection = () => {
                       <span className="font-open-sans text-gray-300 text-sm">
                         {result.metric}
                       </span>
-                      <span className="font-montserrat font-bold text-blue-400">
+                      <span className="font-montserrat font-black text-orange-400 text-lg">
                         {result.value}
                       </span>
                     </div>
@@ -131,10 +138,9 @@ const CasesSection = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition-colors duration-200"
+                  className="w-full border-2 border-orange-500 text-orange-400 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:text-white transition-all duration-300 font-bold"
                 >
-                  <Icon name="ExternalLink" size={16} className="mr-2" />
-                  Подробнее о кейсе
+                  🔍 ИЗУЧИТЬ ПОДРОБНО
                 </Button>
               </CardContent>
             </Card>

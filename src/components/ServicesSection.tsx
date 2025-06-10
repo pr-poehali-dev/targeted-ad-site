@@ -115,7 +115,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-white via-orange-50 to-yellow-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <Badge
@@ -126,13 +126,13 @@ const ServicesSection = () => {
           </Badge>
           <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Полный спектр{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
               digital-услуг
             </span>
           </h2>
           <p className="font-open-sans text-xl text-gray-600 max-w-2xl mx-auto">
-            От идеи до реализации — создаю эффективные цифровые решения для
-            вашего бизнеса
+            От идеи до результата — создаю продающие решения, которые реально
+            увеличивают прибыль! 💰
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className={`${getColorClasses(service.color)} transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-2`}
+              className={`${getColorClasses(service.color)} transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-3 hover:border-orange-400`}
             >
               <CardHeader className="pb-4">
                 <div

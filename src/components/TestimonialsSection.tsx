@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <Badge
@@ -46,13 +46,12 @@ const TestimonialsSection = () => {
           </Badge>
           <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Что говорят{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
               о результатах
             </span>
           </h2>
           <p className="font-open-sans text-xl text-gray-600 max-w-2xl mx-auto">
-            Реальные отзывы от клиентов о проделанной работе и достигнутых
-            результатах
+            ⭐ Реальные отзывы от довольных клиентов о росте их бизнеса
           </p>
         </div>
 
@@ -60,7 +59,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              className="border-3 border-orange-100 hover:border-orange-300 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-br from-white to-orange-50/30"
             >
               <CardContent className="p-6">
                 <div className="flex items-center space-x-1 mb-4">
@@ -103,7 +102,7 @@ const TestimonialsSection = () => {
 
                 <Badge
                   variant="secondary"
-                  className="text-xs bg-blue-50 text-blue-700"
+                  className="text-xs bg-gradient-to-r from-orange-100 to-red-100 text-orange-700 border border-orange-200 font-semibold"
                 >
                   {testimonial.project}
                 </Badge>

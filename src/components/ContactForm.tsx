@@ -55,7 +55,7 @@ const ContactForm = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section className="py-20 bg-gradient-to-br from-orange-100 via-red-50 to-pink-100">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <Badge
@@ -66,19 +66,19 @@ const ContactForm = () => {
           </Badge>
           <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Готовы начать{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
               сотрудничество?
             </span>
           </h2>
           <p className="font-open-sans text-xl text-gray-600 max-w-2xl mx-auto">
-            Оставьте заявку и получите персональное предложение для вашего
-            проекта
+            🎯 Получите персональное предложение и начните зарабатывать больше
+            уже через 7 дней!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="border-2 border-purple-100 shadow-lg">
+          <Card className="border-3 border-orange-200 shadow-2xl bg-white">
             <CardHeader>
               <CardTitle className="font-montserrat text-2xl font-bold text-gray-900">
                 Оставить заявку
@@ -145,7 +145,7 @@ const ContactForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white py-4 text-xl font-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover-scale rounded-xl"
                 >
                   {isSubmitting ? (
                     <>
@@ -159,7 +159,7 @@ const ContactForm = () => {
                   ) : (
                     <>
                       <Icon name="Send" size={20} className="mr-2" />
-                      Отправить заявку
+                      🚀 ОТПРАВИТЬ ЗАЯВКУ НА РОСТ ПРОДАЖ
                     </>
                   )}
                 </Button>
@@ -169,14 +169,14 @@ const ContactForm = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="border-2 border-blue-100 bg-blue-50/50">
+            <Card className="border-3 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 shadow-xl">
               <CardHeader>
                 <CardTitle className="font-montserrat text-xl font-bold text-gray-900 flex items-center">
                   <Icon name="Clock" size={24} className="mr-3 text-blue-600" />
-                  Быстрый отклик
+                  ⚡ Молниеносный отклик
                 </CardTitle>
                 <CardDescription className="font-open-sans text-gray-600">
-                  Отвечаю на заявки в течение 2 часов в рабочее время
+                  Отвечаю на заявки в течение 1 часа! Ваше время = деньги 💰
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -211,17 +211,17 @@ const ContactForm = () => {
               ))}
             </div>
 
-            <Card className="border-2 border-green-100 bg-green-50/50">
+            <Card className="border-3 border-emerald-200 bg-gradient-to-br from-emerald-50 to-green-100 shadow-xl">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <Icon name="Shield" size={24} className="text-green-600" />
-                  <h3 className="font-montserrat font-bold text-gray-900">
-                    Гарантия качества
+                  <h3 className="font-montserrat font-black text-gray-900">
+                    🎯 100% Гарантия результата
                   </h3>
                 </div>
-                <p className="font-open-sans text-gray-600 text-sm">
-                  30 дней бесплатной поддержки после сдачи проекта. Гарантия
-                  соответствия техническому заданию.
+                <p className="font-open-sans text-gray-700 text-sm font-medium">
+                  Не получили обещанный результат? Вернем 100% стоимости!
+                  Работаем на результат, а не на процесс.
                 </p>
               </CardContent>
             </Card>
