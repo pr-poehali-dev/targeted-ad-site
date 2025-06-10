@@ -112,7 +112,7 @@ export default {
   safelist: [
     {
       pattern:
-        /(bg|text|border)-(purple|blue|green|orange|red)-(50|100|200|300|400|500|600|700|800|900)/,
+        /(bg|text|border)-(purple|blue|green|orange|red|yellow|indigo)-(50|100|200|300|400|500|600|700|800|900)/,
     },
   ],
 } satisfies Config;

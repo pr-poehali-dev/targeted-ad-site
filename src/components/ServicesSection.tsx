@@ -37,40 +37,53 @@ const ServicesSection = () => {
       color: "blue",
     },
     {
-      icon: "Target",
-      title: "Таргетированная реклама",
+      icon: "Search",
+      title: "Яндекс.Директ",
       description:
-        "Настройка и ведение рекламных кампаний в социальных сетях и поисковых системах для максимального ROI.",
+        "Настройка и ведение рекламных кампаний в Яндексе для привлечения целевой аудитории с максимальным ROI.",
       features: [
-        "Facebook/Instagram",
-        "Google Ads",
-        "Яндекс.Директ",
-        "Аналитика результатов",
+        "Подбор ключевых слов",
+        "Настройка кампаний",
+        "A/B тестирование",
+        "Отчеты и аналитика",
       ],
-      color: "green",
+      color: "yellow",
+    },
+    {
+      icon: "Users",
+      title: "Реклама ВКонтакте",
+      description:
+        "Таргетированная реклама в социальной сети ВКонтакте для охвата вашей целевой аудитории.",
+      features: [
+        "Настройка таргетинга",
+        "Креативы и тексты",
+        "Ретаргетинг",
+        "Оптимизация ROI",
+      ],
+      color: "indigo",
     },
     {
       icon: "Wifi",
       title: "Сбор MAC-адресов",
       description:
-        "Системы аналитики посещаемости офлайн точек через WiFi. Понимание поведения клиентов в физических локациях.",
+        "Системы аналитики посещаемости офлайн точек через WiFi оборудование. Понимание поведения клиентов.",
       features: [
         "WiFi аналитика",
         "Тепловые карты",
         "Время посещений",
         "Повторные визиты",
       ],
-      color: "orange",
+      color: "green",
     },
     {
-      icon: "Map",
+      icon: "MapPin",
       title: "Яндекс Карты и 2ГИС",
       description:
-        "Настройка и оптимизация бизнес-профилей в картографических сервисах для увеличения локального трафика.",
+        "Оформление и оптимизация бизнес-профилей в картографических сервисах для увеличения локального трафика.",
       features: [
         "Регистрация бизнеса",
         "Оптимизация профиля",
-        "Отзывы и рейтинги",
+        "Работа с отзывами",
         "Локальное SEO",
       ],
       color: "red",
@@ -79,11 +92,12 @@ const ServicesSection = () => {
 
   const getColorClasses = (color: string) => {
     const colors = {
-      purple: "border-purple-200 hover:border-purple-300 bg-purple-50/50",
-      blue: "border-blue-200 hover:border-blue-300 bg-blue-50/50",
-      green: "border-green-200 hover:border-green-300 bg-green-50/50",
-      orange: "border-orange-200 hover:border-orange-300 bg-orange-50/50",
-      red: "border-red-200 hover:border-red-300 bg-red-50/50",
+      purple: "border-purple-200 hover:border-purple-300 bg-purple-50/30",
+      blue: "border-blue-200 hover:border-blue-300 bg-blue-50/30",
+      yellow: "border-yellow-200 hover:border-yellow-300 bg-yellow-50/30",
+      indigo: "border-indigo-200 hover:border-indigo-300 bg-indigo-50/30",
+      green: "border-green-200 hover:border-green-300 bg-green-50/30",
+      red: "border-red-200 hover:border-red-300 bg-red-50/30",
     };
     return colors[color as keyof typeof colors] || colors.purple;
   };
@@ -92,8 +106,9 @@ const ServicesSection = () => {
     const colors = {
       purple: "text-purple-600",
       blue: "text-blue-600",
+      yellow: "text-yellow-600",
+      indigo: "text-indigo-600",
       green: "text-green-600",
-      orange: "text-orange-600",
       red: "text-red-600",
     };
     return colors[color as keyof typeof colors] || colors.purple;
